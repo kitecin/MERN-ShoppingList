@@ -21,10 +21,7 @@ export const addItem = item => dispatch => {
                 type: ADD_ITEM,
                 payload: res.data
             })
-        )
-        .catch(function(error) {
-            console.log(error.response);
-        });
+        );
 };
 
 export const deleteItem = id => {

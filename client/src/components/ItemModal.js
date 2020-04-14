@@ -28,17 +28,17 @@ class ItemModal extends Component {
         this.setState({[e.target.name]: e.target.value});
     }
 
-    onSubmit = (e) =>{
+    onSubmit = e => {
         e.preventDefault();
 
-        const newItem= {
+        const newItem = {
             name: this.state.name
         };
 
         // Add item via addItem action
         this.props.addItem(newItem);
 
-        // Close Modal
+        // Close modal
         this.toggle();
     };
 
